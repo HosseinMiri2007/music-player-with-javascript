@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="music_player">
+            <div class="top_div">
+                <nav class="nav">
+                    <div class="circles">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                        <div class="circle3"></div>  
+                    </div>
+                </nav>
+
+            </div>
+            <div class="center_div">
+                <img src="photos/IMG_20240618_202907_778.jpg" alt="" class="music_thumb">
+                <h1 class="music_title"></h1>
+            </div>
+            <div class="audio_div">
+                <audio src="musics/Crystal Castles - Kerosene (Lyrics).mp3" controls class="audio"></audio>
+                <input type="range" name="range" id="range" class="range" value="0">
+                <div class="audio_btn_div">
+                    <img src="icon/skip_to_start_500px.png" alt="" class="prev" onclick="playPrevsong()">
+                    <img src="icon/play_512px.png" alt="" class="play" onclick="playpause()">
+                    <img src="icon/end_500px.png" alt="" class="next" onclick="playNextsong()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
