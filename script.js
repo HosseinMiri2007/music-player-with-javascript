@@ -76,6 +76,7 @@ function playpause()
         }
         audio.play();
         audio.currentTime = range.value;
+        
     }
 }
 
